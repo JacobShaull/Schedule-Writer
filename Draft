@@ -1,1 +1,61 @@
 
+Requirements:
+Add Time off button
+
+Minimum shifts
+Maximum hours
+Legal considerations
+Time frame we have X amount of clerks
+Save button, Save draft button
+Tab with Saved drafts and names
+Share
+
+Advanced:
+Clerks only do certain tasks
+If time off is not possible, who can switch their shift and what day and time.
+
+
+Tech Stack:
+Backend
+Python
+Flask
+Frontend
+HTML/CSS
+JavaScript
+React
+Database
+#Stores user data, schedules, and constraints.
+SQLITE
+PostgreSQL
+
+Algorithm for Schedule Generation:
+Linear programming
+SciPy
+Must handle changes dynamically as new requests come in
+
+Development and Testing:
+Minimal Viable Product (MVP) with core features
+Test with actual user data to see how it preforms
+
+Feedback and Iteration:
+Once ready, have Gus and Victor use it and give feedback
+Change design based on feedback
+
+Deployment:
+Deploy on a server ex. Heroku, AWS, DigitalOcean
+Linear programming can optimize scheduling by minimizing the total hours while meeting all constraints (employee availability, minimum shift length, max hours per week.
+Set up the problem where each shift is a variable and constraints are based on the employees’ availability and legal requirements
+
+Machine Learning and AI:
+Predictive modeling: Historical data to predict demand or required staffing levels on given days or times. 
+Time series analysis or regression models
+AI Optimization: More complex AI techniques like genetic algorithms or reinforcement learning can be used to adjust schedules based on ongoing data input and changes.
+
+Flask APP:
+
+
+Domain and DNS:
+Namecheap or godaddy
+
+Security:
+HTTPS(SSL/TLS)
