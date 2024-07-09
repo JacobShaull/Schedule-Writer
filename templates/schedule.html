@@ -1,3 +1,4 @@
+<!-- Using fullcalendar instead of manual grid for functionality & simplicity-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule - Schedule App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css' rel='stylesheet' />
 </head>
 <body>
     <header>
@@ -16,14 +18,13 @@
         </nav>
     </header>
     <main>
-        <h2>Your Weekly Schedule</h2>
-        <div id="scheduleContainer">
-            <!-- Schedule will be generated here -->
-        </div>
+        <h2>Weekly Schedule</h2>
+        <div id="scheduleContainer"></div> <!-- FullCalendar will render here -->
     </main>
     <footer>
         <p>&copy; 2024 Schedule App</p>
     </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js'></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>

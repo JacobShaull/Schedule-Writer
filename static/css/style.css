@@ -1,5 +1,30 @@
-body {
-    font-family: Arial, sans-serif;
+.schedule-grid {
+    display: grid;
+    grid-template-columns: 100px repeat(8, 1fr); /* Adjust based on the number of hours you want to display */
+    gap: 10px;
+}
+
+.time-labels, .day {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); /* Same as above */
+}
+
+.time-labels div, .day div {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.day-label {
+    grid-column: span 9; /* Spans all columns for the day label */
     background-color: #f4f4f4;
-    color: #333;
+}
+
+.hour {
+    cursor: pointer; /* Indicates interactiveness */
+    background-color: #e8e8e8;
+}
+
+.hour:hover {
+    background-color: #dedede; /* Feedback for hover */
 }
